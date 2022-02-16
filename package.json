@@ -7,7 +7,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanity-io/eventsource.git",
+    "url": "git+https://github.com/sanity-io/eventsource.git"
   },
   "keywords": [
     "sanity",
