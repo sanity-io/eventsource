@@ -25,42 +25,19 @@
   "type": "commonjs",
   "exports": {
     ".": {
-      "types": "./node.d.ts",
-      "browser": {
-        "types": "./browser.d.ts",
-        "default": "./browser.js"
-      },
+      "browser": "./browser.js",
       "default": "./node.js"
     },
-    "./browser": {
-      "types": "./browser.d.ts",
-      "default": "./browser.js"
-    },
-    "./node": {
-      "types": "./node.d.ts",
-      "default": "./node.js"
-    },
+    "./browser": "./browser.js",
+    "./node": "./node.js",
     "./package.json": "./package.json"
   },
   "main": "./node.js",
   "browser": "./browser.js",
-  "types": "./node.d.ts",
-  "typesVersions": {
-    "*": {
-      "browser": [
-        "./browser.d.ts"
-      ],
-      "node": [
-        "./node.d.ts"
-      ]
-    }
-  },
   "files": [
     "CHANGELOG.md",
     "browser.js",
-    "browser.d.ts",
-    "node.js",
-    "node.d.ts"
+    "node.js"
   ],
   "scripts": {
     "prepublishOnly": "tsc",
@@ -71,8 +48,6 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@types/event-source-polyfill": "1.0.1",
-    "@types/eventsource": "1.1.11",
     "event-source-polyfill": "1.0.31",
     "eventsource": "2.0.2"
   },
