@@ -23,6 +23,12 @@
   "bugs": {
     "url": "https://github.com/sanity-io/sanity/issues"
   },
+  "prettier": {
+    "bracketSpacing": false,
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true
+  },
   "homepage": "https://www.sanity.io/",
   "dependencies": {
     "event-source-polyfill": "1.0.25",
