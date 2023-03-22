@@ -5,6 +5,16 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/sanity-io/eventsource/compare/v4.1.1...v5.0.0) (2023-03-22)
+
+### ⚠ BREAKING CHANGES
+
+- you may need to remove custom `declare module '@sanity/eventsource'` instances in your codebase
+
+### Features
+
+- add TypeScript definitions ([eb9076a](https://github.com/sanity-io/eventsource/commit/eb9076acb0fd32c06a384aee54a7d170ecdc98be))
+
 ## [4.1.1](https://github.com/sanity-io/eventsource/compare/v4.1.0...v4.1.1) (2023-03-22)
 
 ### Bug Fixes
