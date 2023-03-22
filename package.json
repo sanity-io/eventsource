@@ -2,13 +2,6 @@
   "name": "@sanity/eventsource",
   "version": "4.0.0",
   "description": "EventSource polyfill for browser and node.js",
-  "main": "./node.js",
-  "browser": "./browser.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sanity-io/eventsource.git"
-  },
   "keywords": [
     "sanity",
     "cms",
@@ -18,10 +11,60 @@
     "eventsource",
     "polyfill"
   ],
-  "author": "Sanity.io <hello@sanity.io>",
-  "license": "MIT",
+  "homepage": "https://www.sanity.io/",
   "bugs": {
     "url": "https://github.com/sanity-io/sanity/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanity-io/eventsource.git"
+  },
+  "license": "MIT",
+  "author": "Sanity.io <hello@sanity.io>",
+  "sideEffects": false,
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "types": "./node.d.ts",
+      "browser": {
+        "types": "./browser.d.ts",
+        "default": "./browser.js"
+      },
+      "default": "./node.js"
+    },
+    "./browser": {
+      "types": "./browser.d.ts",
+      "default": "./browser.js"
+    },
+    "./node": {
+      "types": "./node.d.ts",
+      "default": "./node.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./node.js",
+  "browser": "./browser.js",
+  "types": "./node.d.ts",
+  "typesVersions": {
+    "*": {
+      "browser": [
+        "./browser.d.ts"
+      ],
+      "node": [
+        "./node.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "CHANGELOG.md",
+    "browser.js",
+    "browser.d.ts",
+    "node.js",
+    "node.d.ts"
+  ],
+  "scripts": {
+    "prepublishOnly": "tsc",
+    "test": "tsc --noEmit --emitDeclarationOnly false"
   },
   "prettier": {
     "bracketSpacing": false,
@@ -29,9 +72,16 @@
     "semi": false,
     "singleQuote": true
   },
-  "homepage": "https://www.sanity.io/",
   "dependencies": {
+    "@types/event-source-polyfill": "1.0.1",
+    "@types/eventsource": "1.1.11",
     "event-source-polyfill": "1.0.25",
-    "eventsource": "^2.0.2"
+    "eventsource": "2.0.2"
+  },
+  "devDependencies": {
+    "@sanity/semantic-release-preset": "^4.0.2",
+    "prettier": "^2.8.6",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "typescript": "^5.0.2"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "include": ["./browser.js", "./node.js"],
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowJs": true,
+    "moduleResolution": "nodenext"
+  }
+}
