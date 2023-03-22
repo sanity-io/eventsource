@@ -67,8 +67,6 @@
     "test": "tsc --noEmit --emitDeclarationOnly false"
   },
   "prettier": {
-    "bracketSpacing": false,
-    "printWidth": 100,
     "semi": false,
     "singleQuote": true
   },
