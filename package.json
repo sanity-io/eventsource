@@ -25,20 +25,25 @@
   "type": "commonjs",
   "exports": {
     ".": {
-      "browser": "./browser.js",
+      "types": "./node.d.ts",
+      "browser": {
+        "types": "./browser.d.ts",
+        "default": "./browser.js"
+      },
       "default": "./node.js"
     },
-    "./browser": "./browser.js",
-    "./node": "./node.js",
+    "./browser": {
+      "types": "./browser.d.ts",
+      "default": "./browser.js"
+    },
+    "./node": {
+      "types": "./node.d.ts",
+      "default": "./node.js"
+    },
     "./package.json": "./package.json"
   },
   "main": "./node.js",
   "browser": "./browser.js",
-  "files": [
-    "CHANGELOG.md",
-    "browser.js",
-    "node.js"
-  ],
   "scripts": {
     "prepublishOnly": "tsc",
     "test": "tsc --noEmit --emitDeclarationOnly false"
@@ -47,7 +52,27 @@
     "semi": false,
     "singleQuote": true
   },
+  "types": "./node.d.ts",
+  "typesVersions": {
+    "*": {
+      "browser": [
+        "./browser.d.ts"
+      ],
+      "node": [
+        "./node.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "CHANGELOG.md",
+    "browser.js",
+    "browser.d.ts",
+    "node.js",
+    "node.d.ts"
+  ],
   "dependencies": {
+    "@types/event-source-polyfill": "1.0.1",
+    "@types/eventsource": "1.1.11",
     "event-source-polyfill": "1.0.31",
     "eventsource": "2.0.2"
   },
