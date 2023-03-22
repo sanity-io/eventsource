@@ -44,14 +44,6 @@
   },
   "main": "./node.js",
   "browser": "./browser.js",
-  "scripts": {
-    "prepublishOnly": "tsc",
-    "test": "tsc --noEmit --emitDeclarationOnly false"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
   "types": "./node.d.ts",
   "typesVersions": {
     "*": {
@@ -70,6 +62,14 @@
     "node.js",
     "node.d.ts"
   ],
+  "scripts": {
+    "prepublishOnly": "tsc",
+    "test": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "dependencies": {
     "@types/event-source-polyfill": "1.0.1",
     "@types/eventsource": "1.1.11",

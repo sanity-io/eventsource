@@ -1,1 +1,1 @@
-module.exports = require('event-source-polyfill').EventSourcePolyfill;
+module.exports = require('event-source-polyfill').EventSourcePolyfill
