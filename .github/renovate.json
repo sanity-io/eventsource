@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>sanity-io/renovate-config",
+    ":reviewer(team:ecosystem)"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchPackageNames": ["@types/event-source-polyfill", "@types/eventsource", "event-source-polyfill", "eventsource"],
+      "rangeStrategy": "bump",
+      "semanticCommitType": "fix"
+    }
+  ]
+}

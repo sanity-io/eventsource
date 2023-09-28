@@ -30,6 +30,10 @@
         "types": "./browser.d.ts",
         "default": "./browser.js"
       },
+      "deno": "./browser.js",
+      "edge-light": "./browser.js",
+      "worker": "./browser.js",
+      "node": "./node.js",
       "default": "./node.js"
     },
     "./browser": {
@@ -77,7 +81,6 @@
     "eventsource": "2.0.2"
   },
   "devDependencies": {
-    "@sanity/semantic-release-preset": "^4.1.2",
     "prettier": "^3.0.1",
     "prettier-plugin-packagejson": "^2.4.5",
     "typescript": "5.1.6"
