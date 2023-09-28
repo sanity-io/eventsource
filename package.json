@@ -81,7 +81,7 @@
     "eventsource": "2.0.2"
   },
   "devDependencies": {
-    "prettier": "^3.0.1",
+    "prettier": "^3.0.3",
     "prettier-plugin-packagejson": "^2.4.5",
     "typescript": "5.1.6"
   }
