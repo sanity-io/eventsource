@@ -5,6 +5,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/sanity-io/eventsource/compare/v5.0.0...v5.0.1) (2023-09-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/event-source-polyfill to v1.0.2 ([bb87c96](https://github.com/sanity-io/eventsource/commit/bb87c961b924783c02d9756dc688b0c061e55a40))
+* **deps:** update dependency @types/eventsource to v1.1.12 ([#39](https://github.com/sanity-io/eventsource/issues/39)) ([e312938](https://github.com/sanity-io/eventsource/commit/e3129386ab2a0119f485d9622d6497ca9c2149b4))
+
 ## [5.0.0](https://github.com/sanity-io/eventsource/compare/v4.1.1...v5.0.0) (2023-03-22)
 
 ### ⚠ BREAKING CHANGES
