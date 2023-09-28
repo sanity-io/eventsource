@@ -1,6 +1,6 @@
 {
   "name": "@sanity/eventsource",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "EventSource polyfill for browser and node.js",
   "keywords": [
     "sanity",
@@ -81,7 +81,7 @@
     "eventsource": "2.0.2"
   },
   "devDependencies": {
-    "prettier": "^3.0.3",
+    "prettier": "^3.0.1",
     "prettier-plugin-packagejson": "^2.4.5",
     "typescript": "5.1.6"
   }
