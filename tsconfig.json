@@ -4,6 +4,7 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "allowJs": true,
+    "module": "nodenext",
     "moduleResolution": "nodenext"
   }
 }
