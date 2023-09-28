@@ -75,7 +75,7 @@
     "singleQuote": true
   },
   "dependencies": {
-    "@types/event-source-polyfill": "1.0.1",
+    "@types/event-source-polyfill": "1.0.2",
     "@types/eventsource": "1.1.11",
     "event-source-polyfill": "1.0.31",
     "eventsource": "2.0.2"
