@@ -11,6 +11,7 @@
         "eventsource"
       ],
       "rangeStrategy": "bump",
+      "groupSlug": null,
       "semanticCommitType": "fix"
     }
   ]
