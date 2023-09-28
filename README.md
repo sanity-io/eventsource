@@ -35,13 +35,6 @@ To force the Node implementation, use the following:
 import polyfilledEventSource from '@sanity/eventsource/node'
 ```
 
-## Release new version
-
-Run ["CI & Release" workflow](https://github.com/sanity-io/eventsource/actions/workflows/ci.yml).
-Make sure to select the main branch and check "Release new version".
-
-Semantic release will only release on configured branches, so it is safe to run release on any branch.
-
 ## License
 
 MIT © [Sanity.io](https://www.sanity.io/)
