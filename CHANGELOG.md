@@ -5,6 +5,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/sanity-io/eventsource/compare/v5.0.1...v5.0.2) (2024-04-22)
+
+
+### Bug Fixes
+
+* add react-native export ([#54](https://github.com/sanity-io/eventsource/issues/54)) ([52064fb](https://github.com/sanity-io/eventsource/commit/52064fb506f4ad37530bb535eee07bd41cbd1f36))
+
 ## [5.0.1](https://github.com/sanity-io/eventsource/compare/v5.0.0...v5.0.1) (2023-09-28)
 
 
