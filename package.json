@@ -30,6 +30,10 @@
         "types": "./browser.d.ts",
         "default": "./browser.js"
       },
+      "react-native": {
+        "types": "./browser.d.ts",
+        "default": "./browser.js"
+      },
       "deno": "./browser.js",
       "edge-light": "./browser.js",
       "worker": "./browser.js",
