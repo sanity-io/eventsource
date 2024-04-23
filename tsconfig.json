@@ -1,5 +1,5 @@
 {
-  "include": ["./browser.js", "./node.js"],
+  "include": ["./node.js"],
   "compilerOptions": {
     "declaration": true,
     "emitDeclarationOnly": true,
