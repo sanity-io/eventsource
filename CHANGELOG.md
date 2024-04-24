@@ -7,18 +7,16 @@ All notable changes to this project will be documented in this file. See
 
 ## [5.0.2](https://github.com/sanity-io/eventsource/compare/v5.0.1...v5.0.2) (2024-04-22)
 
-
 ### Bug Fixes
 
-* add react-native export ([#54](https://github.com/sanity-io/eventsource/issues/54)) ([52064fb](https://github.com/sanity-io/eventsource/commit/52064fb506f4ad37530bb535eee07bd41cbd1f36))
+- add react-native export ([#54](https://github.com/sanity-io/eventsource/issues/54)) ([52064fb](https://github.com/sanity-io/eventsource/commit/52064fb506f4ad37530bb535eee07bd41cbd1f36))
 
 ## [5.0.1](https://github.com/sanity-io/eventsource/compare/v5.0.0...v5.0.1) (2023-09-28)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/event-source-polyfill to v1.0.2 ([bb87c96](https://github.com/sanity-io/eventsource/commit/bb87c961b924783c02d9756dc688b0c061e55a40))
-* **deps:** update dependency @types/eventsource to v1.1.12 ([#39](https://github.com/sanity-io/eventsource/issues/39)) ([e312938](https://github.com/sanity-io/eventsource/commit/e3129386ab2a0119f485d9622d6497ca9c2149b4))
+- **deps:** update dependency @types/event-source-polyfill to v1.0.2 ([bb87c96](https://github.com/sanity-io/eventsource/commit/bb87c961b924783c02d9756dc688b0c061e55a40))
+- **deps:** update dependency @types/eventsource to v1.1.12 ([#39](https://github.com/sanity-io/eventsource/issues/39)) ([e312938](https://github.com/sanity-io/eventsource/commit/e3129386ab2a0119f485d9622d6497ca9c2149b4))
 
 ## [5.0.0](https://github.com/sanity-io/eventsource/compare/v4.1.1...v5.0.0) (2023-03-22)
 
