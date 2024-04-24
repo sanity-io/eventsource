@@ -1,6 +1,6 @@
 {
   "name": "@sanity/eventsource",
-  "version": "5.0.2",
+  "version": "6.0.0-canary.2",
   "description": "EventSource polyfill for browser and node.js",
   "keywords": [
     "sanity",
@@ -25,68 +25,73 @@
   "type": "commonjs",
   "exports": {
     ".": {
-      "types": "./node.d.ts",
+      "source": "./src/node.ts",
       "browser": {
-        "types": "./browser.d.ts",
-        "default": "./browser.js"
+        "source": "./src/browser.ts",
+        "import": "./dist/browser.mjs",
+        "require": "./dist/browser.js"
       },
       "react-native": {
-        "types": "./browser.d.ts",
-        "default": "./browser.js"
+        "import": "./dist/browser.mjs",
+        "default": "./dist/browser.js"
       },
-      "deno": "./browser.js",
-      "edge-light": "./browser.js",
-      "worker": "./browser.js",
-      "node": "./node.js",
-      "default": "./node.js"
+      "deno": "./dist/browser.mjs",
+      "edge-light": "./dist/browser.mjs",
+      "worker": "./dist/browser.mjs",
+      "node": {
+        "import": "./dist/node.mjs",
+        "default": "./dist/node.js"
+      },
+      "import": "./dist/node.mjs",
+      "default": "./dist/node.js"
     },
     "./browser": {
-      "types": "./browser.d.ts",
-      "default": "./browser.js"
+      "import": "./dist/browser.mjs",
+      "default": "./dist/browser.js"
     },
     "./node": {
-      "types": "./node.d.ts",
-      "default": "./node.js"
+      "import": "./dist/node.mjs",
+      "default": "./dist/node.js"
     },
     "./package.json": "./package.json"
   },
-  "main": "./node.js",
-  "browser": "./browser.js",
-  "types": "./node.d.ts",
+  "main": "./dist/node.js",
+  "browser": {
+    "./dist/node.js": "./dist/browser.js",
+    "./dist/node.mjs": "./dist/browser.mjs"
+  },
+  "types": "./dist/node.d.ts",
   "typesVersions": {
     "*": {
       "browser": [
-        "./browser.d.ts"
+        "./dist/browser.d.ts"
       ],
       "node": [
-        "./node.d.ts"
+        "./dist/node.d.ts"
       ]
     }
   },
   "files": [
+    "dist",
     "CHANGELOG.md",
     "browser.js",
-    "browser.d.ts",
-    "node.js",
-    "node.d.ts"
+    "node.js"
   ],
   "scripts": {
-    "prepublishOnly": "tsc",
-    "test": "tsc --noEmit --emitDeclarationOnly false"
+    "build": "pkg-utils build --strict --clean --check",
+    "prepublishOnly": "npm run build",
+    "test": "tsc"
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
+  "browserslist": "extends @sanity/browserslist-config",
+  "prettier": "@sanity/prettier-config",
   "dependencies": {
-    "@types/event-source-polyfill": "1.0.5",
     "@types/eventsource": "1.1.15",
-    "event-source-polyfill": "1.0.31",
     "eventsource": "2.0.2"
   },
   "devDependencies": {
+    "@sanity/pkg-utils": "^6.8.6",
+    "@sanity/prettier-config": "^1.0.2",
     "prettier": "^3.2.5",
-    "prettier-plugin-packagejson": "^2.4.12",
-    "typescript": "5.4.2"
+    "typescript": "5.4.5"
   }
 }

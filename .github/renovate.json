@@ -4,12 +4,7 @@
   "packageRules": [
     {
       "matchDepTypes": ["dependencies"],
-      "matchPackageNames": [
-        "@types/event-source-polyfill",
-        "@types/eventsource",
-        "event-source-polyfill",
-        "eventsource"
-      ],
+      "matchPackageNames": ["@types/eventsource", "eventsource"],
       "rangeStrategy": "bump",
       "semanticCommitType": "fix"
     }
