@@ -19,7 +19,7 @@ import polyfilledEventSource from '@sanity/eventsource'
 
 The polyfill adds support for auth headers, which isn't part of the EventSource spec.
 
-In NodeJS environments it's the implementation from [eventsource](https://www.npmjs.com/package/eventsource) package. While browsers use [event-source-polyfill](https://www.npmjs.com/package/event-source-polyfill).
+In Node.js environments, the implementation is from the [eventsource](https://www.npmjs.com/package/eventsource) package, while browser-like environments use an inlined version of [event-source-polyfill](https://www.npmjs.com/package/event-source-polyfill).
 
 ### Forcing a specific implementation
 
@@ -29,7 +29,7 @@ To get the browser implementation, no matter how your bundler or runtime underst
 import polyfilledEventSource from '@sanity/eventsource/browser'
 ```
 
-To force the Node implementation, use the following:
+To force the Node.js implementation, use the following:
 
 ```ts
 import polyfilledEventSource from '@sanity/eventsource/node'
