@@ -37,7 +37,7 @@ jobs:
         with:
           app_id: ${{ secrets.ECOSPARK_APP_ID }}
           private_key: ${{ secrets.ECOSPARK_APP_PRIVATE_KEY }}
-      - uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38 # v5
+      - uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
         with:
           author: github-actions <41898282+github-actions[bot]@users.noreply.github.com>
           body: I ran `npx prettier --cache --write .` 🧑‍💻
