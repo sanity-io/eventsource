@@ -5,6 +5,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.4](https://github.com/sanity-io/eventsource/compare/v5.0.3...v5.0.4) (2026-07-15)
+
+
+### Bug Fixes
+
+* add ESM browser entry for bundlers ([#78](https://github.com/sanity-io/eventsource/issues/78)) ([3f22ddb](https://github.com/sanity-io/eventsource/commit/3f22ddb5f0363197280f39796d146ed4ce9eefea))
+
 ## [5.0.3](https://github.com/sanity-io/eventsource/compare/v5.0.2...v5.0.3) (2026-07-15)
 
 
