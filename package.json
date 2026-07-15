@@ -64,7 +64,6 @@
     }
   },
   "files": [
-    "CHANGELOG.md",
     "browser.js",
     "browser.d.ts",
     "node.js",
