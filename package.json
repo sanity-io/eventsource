@@ -1,6 +1,6 @@
 {
   "name": "@sanity/eventsource",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "EventSource polyfill for browser and node.js",
   "keywords": [
     "sanity",

@@ -5,6 +5,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.3](https://github.com/sanity-io/eventsource/compare/v5.0.2...v5.0.3) (2026-07-15)
+
+
+### Bug Fixes
+
+* stop publishing CHANGELOG.md to npm ([#75](https://github.com/sanity-io/eventsource/issues/75)) ([9aee549](https://github.com/sanity-io/eventsource/commit/9aee549fd6fbd098efe4614f46faa3cb139cc155))
+
 ## [5.0.2](https://github.com/sanity-io/eventsource/compare/v5.0.1...v5.0.2) (2024-04-22)
 
 
